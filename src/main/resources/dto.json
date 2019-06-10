@@ -1,0 +1,131 @@
+{
+  "fileUpload/100101": {
+    "fileUpload_100101_comment": "1_文件上传",
+    "uploadDate":{
+      "comment":"文件数据日期",
+      "verify": true,
+      "min": "1",
+      "max": "18",
+      "type": "string"
+    },
+    "officeType":{
+      "comment":"上传文件的机构类型",
+      "verify": true,
+      "min": "1",
+      "max": "2",
+      "type": "string"
+    },
+    "uploadUserCode":{
+      "comment":"机构标志",
+      "verify": true,
+      "min": "1",
+      "max": "32",
+      "type": "string"
+    },
+    "uploadName":{
+      "comment":"上传文件名称",
+      "verify": true,
+      "min": "1",
+      "max": "128",
+      "type": "string"
+    },
+    "fileType":{
+      "comment":"文件类型",
+      "verify": true,
+      "min": "1",
+      "max": "3",
+      "type": "string"
+    },
+    "sourceSerialNo":{
+      "comment":"原文件流水号",
+      "verify": true,
+      "min": "1",
+      "max": "32",
+      "type": "string"
+    },
+    "uploadFileBase64Code":{
+      "comment":"上传文件内容",
+      "verify": false,
+      "min": "1",
+      "max": "0",
+      "type": "string"
+    }
+  },
+  "fileQuery/100102": {
+    "files_100102_comment": "2_文件查询",
+    "serialNo":{
+      "comment":"文件流水号",
+      "verify": true,
+      "min": "1",
+      "max": "32",
+      "type": "string"
+    },
+    "officeType":{
+      "comment":"查询文件的机构类型",
+      "verify": true,
+      "min": "1",
+      "max": "2",
+      "type": "string"
+    },
+    "uploadUserCode":{
+      "comment":"机构标志",
+      "verify": true,
+      "min": "1",
+      "max": "32",
+      "type": "string"
+    },
+    "fileType":{
+      "comment":"文件类型",
+      "verify": true,
+      "min": "1",
+      "max": "3",
+      "type": "string"
+    },
+    "uploadDate":{
+      "comment":"文件上传日期",
+      "verify": true,
+      "min": "1",
+      "max": "18",
+      "type": "string"
+    },
+    "fileName":{
+      "comment":"文件名称",
+      "verify": true,
+      "min": "1",
+      "max": "128",
+      "type": "string"
+    },
+    "fileStatus":{
+      "comment":"文件状态",
+      "verify": true,
+      "min": "1",
+      "max": "3",
+      "type": "string"
+    }
+
+  },
+  "fileDownload/100103": {
+    "fileDownload_100103_comment": "3_文件下载",
+    "serialNo":{
+      "comment":"文件流水号",
+      "verify": true,
+      "min": "1",
+      "max": "32",
+      "type": "string"
+    },
+    "fileType": {
+      "comment":"文件类型",
+      "verify": true,
+      "min": "1",
+      "max": "3",
+      "type": "string"
+    },
+    "uploadUserCode":{
+      "comment":"上传文件的机构编码",
+      "verify": true,
+      "min": "1",
+      "max": "32",
+      "type": "string"
+    }
+  }
+}
