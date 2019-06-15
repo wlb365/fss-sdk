@@ -38,7 +38,7 @@
     },
     "sourceSerialNo":{
       "comment":"原文件流水号",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "32",
       "type": "string"
@@ -55,21 +55,21 @@
     "files_100102_comment": "2_文件查询",
     "serialNo":{
       "comment":"文件流水号",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "32",
       "type": "string"
     },
     "officeType":{
       "comment":"查询文件的机构类型",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "2",
       "type": "string"
     },
     "uploadUserCode":{
       "comment":"机构标志",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "32",
       "type": "string"
@@ -83,21 +83,21 @@
     },
     "uploadDate":{
       "comment":"文件上传日期",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "18",
       "type": "string"
     },
     "fileName":{
       "comment":"文件名称",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "128",
       "type": "string"
     },
     "fileStatus":{
       "comment":"文件状态",
-      "verify": true,
+      "verify": false,
       "min": "1",
       "max": "3",
       "type": "string"
