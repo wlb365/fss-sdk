@@ -19,13 +19,13 @@ public class Test100101 {
         SendDTO dto = new SendDTO();
         dto.setUrl("fileUpload/100101");
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("uploadDate", "20190614");
+        map.put("uploadDate", "20190618");
         map.put("officeType", "1");
         map.put("uploadUserCode", "626");
-        map.put("uploadName", "626_20190614_1_Bind_3.txt");
+        map.put("uploadName", "626_20190618_1_Bind_3.txt");
         map.put("fileType", "1");
         //map.put("sourceSerialNo", "");
-        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\绑卡文件-不更换账号\\626_20190614_1_Bind_3.txt");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\广发\\绑卡文件-不更换账号\\626_20190618_1_Bind_3.txt");
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
@@ -60,13 +60,13 @@ public class Test100101 {
         SendDTO dto = new SendDTO();
         dto.setUrl("fileUpload/100101");
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("uploadDate", "20190614");
+        map.put("uploadDate", "20190617");
         map.put("officeType", "1");
         map.put("uploadUserCode", "626");
         map.put("uploadName", "626_20190614_1_06_3.txt");
         map.put("fileType", "3");
         //map.put("sourceSerialNo", "");
-        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\06文件\\626_20190614_1_06_3.txt");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\民生\\06文件\\626_20190614_1_06_3.txt");
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
@@ -74,6 +74,28 @@ public class Test100101 {
         System.out.println(JSON.toJSONString(pojo));
 
     }
+    //测试广发应付客户转账文件上传
+    @Test
+    public void transPayGFFile() throws IOException {
+        SendDTO dto = new SendDTO();
+        dto.setUrl("fileUpload/100101");
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("uploadDate", "20190614");
+        map.put("officeType", "1");
+        map.put("uploadUserCode", "626");
+        map.put("uploadName", "626_20190614_1_F_3.txt");
+        map.put("fileType", "4");
+        //map.put("sourceSerialNo", "");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\应付客户转账-民生\\626_20190614_1_F_3.txt");
+        String encode = Base64Encoder.encode(bytes);
+        map.put("uploadFileBase64Code", encode);
+        dto.setData(map);
+        ResponsePojo pojo= RootApi.run(dto);
+        System.out.println(JSON.toJSONString(pojo));
+
+    }
+
+
 
     //测试民生应付客户转账文件上传
     @Test

@@ -24,7 +24,7 @@ public class Test100102 {
         SendDTO dto = new SendDTO();
         dto.setUrl("fileQuery/100102");
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("serialNo", "2019061419395216120656922863");
+        map.put("serialNo", "");
         map.put("officeType", "");
         map.put("uploadUserCode", "");
         map.put("fileType", "1");
