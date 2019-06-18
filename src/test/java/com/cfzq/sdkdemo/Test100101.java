@@ -11,6 +11,15 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * <p>
+ *      概述:文件上传
+ * </p>
+ *
+ * @Auther:         ysh
+ * @copyRight       2014-2019 All right reserved.
+ * @Date:           2019/6/15 16:13
+ */
 public class Test100101 {
 
     // 测试绑卡文件上传

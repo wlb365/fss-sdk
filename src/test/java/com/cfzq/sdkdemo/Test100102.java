@@ -10,12 +10,12 @@ import java.util.HashMap;
 
 /**
  * <p>
- * 概述:
+ *      概述:文件查询
  * </p>
  *
- * @Auther: ysh
- * @copyRight 所有权: 2014-2017 All right reserved.
- * @Date: 2019/6/15 16:13
+ * @Auther:         ysh
+ * @copyRight       2014-2019 All right reserved.
+ * @Date:           2019/6/15 16:13
  */
 public class Test100102 {
 
