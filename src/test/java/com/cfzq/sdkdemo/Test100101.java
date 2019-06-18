@@ -22,14 +22,14 @@ public class Test100101 {
         map.put("uploadDate", "20190618");
         map.put("officeType", "1");
         map.put("uploadUserCode", "626");
-        map.put("uploadName", "626_20190618_1_Bind_3.txt");
+        map.put("uploadName", "626_20190617_1_Bind_3.txt");
         map.put("fileType", "1");
         //map.put("sourceSerialNo", "");
-        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\广发\\绑卡文件-不更换账号\\626_20190618_1_Bind_3.txt");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\民生\\绑卡文件(多)\\626_20190617_1_Bind_3.txt");
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
     }
 
@@ -39,17 +39,17 @@ public class Test100101 {
         SendDTO dto = new SendDTO();
         dto.setUrl("fileUpload/100101");
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("uploadDate", "20190614");
+        map.put("uploadDate", "20190618");
         map.put("officeType", "1");
         map.put("uploadUserCode", "626");
-        map.put("uploadName", "626_20190614_1_04_3.txt");
+        map.put("uploadName", "626_20190617_1_04_3.txt");
         map.put("fileType", "2");
         //map.put("sourceSerialNo", "");
-        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\04文件\\626_20190614_1_04_3.txt");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\民生\\04文件\\626_20190617_1_04_3.txt");
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
@@ -70,7 +70,7 @@ public class Test100101 {
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
@@ -80,21 +80,20 @@ public class Test100101 {
         SendDTO dto = new SendDTO();
         dto.setUrl("fileUpload/100101");
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("uploadDate", "20190614");
+        map.put("uploadDate", "20190617");
         map.put("officeType", "1");
         map.put("uploadUserCode", "626");
-        map.put("uploadName", "626_20190614_1_F_3.txt");
+        map.put("uploadName", "626_20190617_1_F_3.txt");
         map.put("fileType", "4");
         //map.put("sourceSerialNo", "");
-        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\应付客户转账-民生\\626_20190614_1_F_3.txt");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\广发\\应付客户转账\\626_20190617_1_F_3.txt");
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
-
 
 
     //测试民生应付客户转账文件上传
@@ -113,7 +112,28 @@ public class Test100101 {
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
+        System.out.println(JSON.toJSONString(pojo));
+
+    }
+
+    //测试广发应付基金公司转账文件上传
+    @Test
+    public void transFundPayGFFile() throws IOException {
+        SendDTO dto = new SendDTO();
+        dto.setUrl("fileUpload/100101");
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("uploadDate", "20190618");
+        map.put("officeType", "1");
+        map.put("uploadUserCode", "626");
+        map.put("uploadName", "626_20190617_1_CF_3.txt");
+        map.put("fileType", "5");
+        //map.put("sourceSerialNo", "");
+        byte[] bytes = FileUtil.InputStream2ByteArray("C:\\Users\\dpb\\Desktop\\doc\\data\\WLB\\广发\\应付基金公司转账\\626_20190617_1_CF_3.txt");
+        String encode = Base64Encoder.encode(bytes);
+        map.put("uploadFileBase64Code", encode);
+        dto.setData(map);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
@@ -134,7 +154,7 @@ public class Test100101 {
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
@@ -155,7 +175,7 @@ public class Test100101 {
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
@@ -175,11 +195,10 @@ public class Test100101 {
         String encode = Base64Encoder.encode(bytes);
         map.put("uploadFileBase64Code", encode);
         dto.setData(map);
-        ResponsePojo pojo= RootApi.run(dto);
+        ResponsePojo pojo=RootApi.run(dto);
         System.out.println(JSON.toJSONString(pojo));
 
     }
-
 
 
 }
