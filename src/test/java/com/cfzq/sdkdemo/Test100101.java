@@ -258,7 +258,7 @@ public class Test100101 {
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("uploadDate", "20190620");
         map.put("officeType", "2");
-        map.put("uploadUserCode", "1139387373736771584");
+        map.put("uploadUserCode", "CFZQ");
         map.put("uploadName", "626_20190620_3_06_3.txt");
         map.put("fileType", "13");
         //map.put("sourceSerialNo", "");
