@@ -24,9 +24,9 @@ public class Test100103 {
         SendDTO dto = new SendDTO();
         dto.setUrl("fileDownload/100103");
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("serialNo", "2019061809431372720631554747");
-        map.put("fileType", "1");
-        map.put("uploadUserCode", "626");
+        map.put("serialNo", "1218114894046449664");
+        map.put("fileType", "2");
+        map.put("uploadUserCode", "645");
         //map.put("sourceSerialNo", "");
         dto.setData(map);
         ResponsePojo pojo= RootApi.run(dto);
